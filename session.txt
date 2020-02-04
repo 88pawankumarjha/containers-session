@@ -7,8 +7,21 @@ Shared:
   git clone https://github.com/mohanraz81/kube_install_kops.git
   git clone https://github.com/mohanraz81/myapp1808.git
 
+  
+  Student 10
+
 Mine:
   commands:
     pwd -- /home/ec2-user/environment
     sudo yum -y install docker
     sudo chkconfig docker on
+
+    sample commands for creating and running an existing image:
+      docker run -d -p 9000:80 --name testapache httpd:2.4
+      docker inspect testapache|grep -i pid
+      ps -eaf|grep 4077
+      sudo bash
+      docker start testapache
+      docker stop testapache
+      docker rm testapache
+
