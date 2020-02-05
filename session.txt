@@ -36,3 +36,5 @@ Mine:
 
 
 Domain name: lab10.courseandlabs.com.
+default path of  kube config ---> ~/.kube/config
+  else set an env variable KUBECONFIG
