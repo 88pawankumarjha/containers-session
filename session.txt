@@ -32,4 +32,4 @@ Mine:
       docker stop testapache
       docker rm testapache
 
-  freenome.com -- free domain
+  freenom.com -- free domain
