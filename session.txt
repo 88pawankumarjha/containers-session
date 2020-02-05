@@ -32,7 +32,4 @@ Mine:
       docker stop testapache
       docker rm testapache
 
-
-
-  break:
-    stop, rm, build with ro, run, 
+  freenome.com -- free domain
