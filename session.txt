@@ -33,3 +33,6 @@ Mine:
       docker rm testapache
 
   freenom.com -- free domain
+
+
+Domain name: lab10.courseandlabs.com.
