@@ -1,3 +1,7 @@
+9611046506
+mohan@archeplay.com
+
+
 Shared:
   Lab: http://labsap.s3-website-us-west-1.amazonaws.com/
   Docs: https://drive.google.com/drive/folders/15Rg9bU1PTOw19oIQDel7E4meppiJhT9k?usp=sharing
@@ -48,16 +52,474 @@ https://notepad.pw/802umnc2
 Lab: http://labsap.s3-website-us-west-1.amazonaws.com/
 Docs: https://drive.google.com/drive/folders/15Rg9bU1PTOw19oIQDel7E4meppiJhT9k?usp=sharing
 
-Git hub:
-git clone https://github.com/mohanraz81/awslogs.git
-git clone https://github.com/mohanraz81/kube_install_kops.git
-git clone https://github.com/mohanraz81/myapp1808.git
 
-Student 10
 
-1.. 
-1 3 5
-2 4
-
-Clarifications:
-CPU vs GPU
+AP-LAB-ROLE59:~/environment/cart-ms (master) $ history
+    1  pwd
+    2  sudo yum -y install docker
+    3   sudo service docker start
+    4  sudo chkconfig docker on
+    5   sudo service dockerstatus
+    6   sudo service docker status
+    7  clr
+    8  clear
+    9  whoami
+   10  sudo usermod -a -G docker ec2-user
+   11  cat /etc/groups
+   12  cat /etc/groups/
+   13  id -a
+   14  cat /etc/groups
+   15  cat /etc/group
+   16  docker info
+   17  ~ps -eaf|grep docker
+   18  s -eaf|grep docker
+   19  ps -eaf|grep docker
+   20  pwd
+   21  ~home
+   22  cd ~home
+   23  cd 1
+   24  cd /var/lib/docker
+   25  ls
+   26  cd ~environment
+   27  cd /home/ec2-user/environment
+   28  pwd
+   29  docker pull httpd:2.4
+   30  docker images
+   31  docker inspect httpd:2.4
+   32  docker run -d -p 9000:80 --name testapache https:2.4
+   33  docker run -d -p 9000:80 --name testapache httpd:2.4
+   34  docker ps
+   35  docker ps -a
+   36  docker inspect testapache
+   37  docker inspect testapache|grep -i pid
+   38  docker inspect testapache|grep Pid
+   39  ps -eaf|grep 5250
+   40  sudo bash
+   41  docker inspect testapache|grep 5350
+   42  docker inspect testapache|grep -i pid
+   43  sudo bash
+   44  docker top testapache
+   45  docker stats testapache
+   46  docker logs testapache
+   47  history
+   48  cd /var/lib/docker
+   49  ls
+   50  sudo ls
+   51  cd /home/ed2-user/
+   52  cd /home/ec2-user/
+   53  cd environment/
+   54  docker exec testapache cat /etc/hosts
+   55  docker exec -it testapache /bin/bash
+   56  ps -eaf
+   57  docker ps -a
+   58  docker start testapache
+   59  docker ps -a
+   60  docker restart testapache
+   61  docker ps -a
+   62  docker stop testapache
+   63  docker ps -a
+   64  docker restart testapache
+   65  docker ps -a
+   66  docker rm testapache
+   67  docker stop testapache
+   68  docker rm testapache
+   69  mkdir cart
+   70  cd car
+   71  cd cart/
+   72  mkdir code config scripts
+   73  touch Dockerfile
+   74  ls
+   75  history
+   76  sudo bash
+   77  pwd
+   78  cd /var/www/html
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd /home/ec2-user/environment/cart
+   83  history
+   84  pwd
+   85  ls
+   86  cd cart
+   87  docker run -d -p 9000:80 --name testapache httpd:2.4
+   88        docker inspect testapache|grep -i pid
+   89  ps -eaf|grep 4077
+   90  sudo bash
+   91  docker stop testapache
+   92  docker rm testapache
+   93  docker history
+   94  docker images
+   95  docker history httpd
+   96  docker history c562eeace183
+   97  ls
+   98  df -h
+   99  ls
+  100  cd ..
+  101  docker build -t 88pawankumarjha/cart-frontend:1.0 cart/
+  102  docker images
+  103  docker tag bc2f8ff0f6e6 88pawankumarjha/cart-frontend:latest
+  104  docker images
+  105  history
+  106  docker images
+  107  docket inspect bc2f8ff0f6e6
+  108  docker inspect bc2f8ff0f6e6
+  109  docker ps -a
+  110  docker run -d -p 9000:80 --name cart-frontend -e MY_DB_HOST_WRITE=test 88pawankumarjha/cart-frontend:latest
+  111  docker ps -a
+  112  cur
+  113  curl
+  114  curl  0.0.0.0:9000
+  115  docker restart testcart
+  116  ps -a
+  117  docker ps -a
+  118  docker restart 5f282c862d90
+  119  curl  0.0.0.0:9000
+  120  docker login
+  121  docker ps -a
+  122  docker push 88pawankumarjha/cart-frontend
+  123  docker build -t 88pawankumarjha/cart-frontend:1.1 cart/
+  124  docker ps -a
+  125  docker stop 5f282c862d90
+  126  docker rm 5f282c862d90
+  127  docker run -d -p 9000:80 --name cart-frontend -e MY_DB_HOST_WRITE=test 88pawankumarjha/cart-frontend:1.1
+  128  docker ps -a
+  129  docker tag 7e075fc738 88pawankumarjha/cart-frontend:latest 
+  130  docker ps  -a
+  131  docker tag 7e075fc73738 88pawankumarjha/cart-frontend:latest
+  132  docker push 88pawankumarjha/cart-frontend:1.1
+  133  docker run -d -p 9000:80 --name cart-frontend -e MY_DB_HOST_WRITE=test 88pawankumarjha/cart-frontend:1.1
+  134  docker ps -a
+  135  docker stop 7e075fc73738
+  136  docker ps -a
+  137   docker ps -a
+  138  docker rm 7e075fc73738
+  139   docker ps -a
+  140  docker run -d -p 9000:80 --name cart-frontend -v logvol:/var/log -v /home/ec2-user:/home/ec2-user -e MY_DB_HOST_WRITE=test 88pawankumarjha/cart-frontend:1.1
+  141  docker colume ls
+  142  docker volume ls
+  143  docker inspect logvol
+  144  cd /var/lib/docker/volumes/logvol/_data
+  145  docker ps -
+  146  docker ps -a
+  147  docker inspect 
+  148  docker inspect a03503c911c4
+  149  docker exec -it cart-frontend /bin/bash
+  150  sudo bash
+  151  cd /var/lib/docker/volumes/logvol/_data
+  152  history
+  153  cd cd /var/lib/docker/volumes/logvol/_data
+  154  cd /var/lib/docker/volumes/logvol/_data
+  155  /bin/bsah
+  156  cd /var/lib/docker/volumes/logvol/_data
+  157  su
+  158  aws sts get-caller-identity
+  159  rm -rf ~/.aws
+  160  aws sts get-caller-identity
+  161  git clone https://github.com/mohanraz81/awslogs.git
+  162  /bin/bash
+  163  ls
+  164  docker ps -a
+  165  docker build -t 88pawankumarjha/logagent:1.0 awslogs
+  166  docker volumes
+  167  docker volume
+  168  docker run -d -v logvol:/mnt/log:ro 88pawankumarjha:logagent:1.0
+  169  docker run -d -v logvol:/mnt/log:ro 88pawankumarjha/logagent:1.0
+  170  curl http://localhost:9000
+  171  clear
+  172  docker exec -it logagent /bin/bash
+  173  ps -a
+  174  docker ps -a
+  175  docker exec -it keen_hugle /bin/bash
+  176  docker inspect cart-agent
+  177  docker inspect cart-frontend
+  178  echo "hello world" > test.log
+  179  ls
+  180  cat test.log 
+  181  git clone https://github.com/mohanraz81/myapp1808.git
+  182  dockerps -a
+  183  docker ps -a
+  184  docker push 88pawankumarjha/logagent:1.0
+  185  sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  186  sudo chmod +x /usr/local/bin/docker-compose
+  187  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+  188  cd cart-ms/
+  189  docker-compose up -d
+  190  docker ps -a
+  191  docker stop 3399b28a0a83 a03503c911c4
+  192  docker stop 3399b28a0a83 
+  193  docker stop a03503c911c4
+  194  docker rm 3399b28a0a83
+  195  docker rm a03503c911c4
+  196  docker ps -a
+  197  docker-compose up -d
+  198  docker ps -a
+  199  docker logs
+  200  docker log
+  201  docker-compose down
+  202  docker-compose up -d
+  203  docker logs
+  204  docker logs cart-ms_myapp-db_1
+  205  docker ps -a
+  206  docker exec -it cart-ms_myapp-db_1 /bin/bash
+  207  docker-compose push
+  208  docker-compose down
+  209  PWD
+  210  pwd
+  211  git clone https://github.com/mohanraz81/kube_install_kops.git
+  212  cd kube_install_kops/
+  213  aws sts get-caller0identity
+  214  aws sts get-caller-identity
+  215  ./create_cluster.sh lab10.courseandlabs.com cloud9_role
+  216  ./get_cluster.sh 
+  217  kubectl get nodes
+  218  docker ps -a
+  219  docker images
+  220  cd ..
+  221  kubectl create namespace mycart
+  222  kubectl apply -f cart-ms/deploy/frontend/deploy.yaml
+  223  kubectl get
+  224  kubectl get deploy -n mycart
+  225  kubectl describe  deploy -n mycart
+  226  kubectl describe  deploy myacart-frontend -n mycart
+  227  kubectl get rs -n mycart
+  228  kubectl get pods -n mycart
+  229  kubectl describe rs -n mycart
+  230  kubectl get pods  -n mycart
+  231  kubectl describe pods  -n mycart
+  232  kubectl describe pod -n mycart
+  233  kubectl apply -f cart-ms/deploy/frontend/service.yaml
+  234  kubectl get services -n mycart -o wide
+  235  cd kube_install_kops/
+  236  history
+  237  ./delete_cluster.sh 
+  238  cd kube_install_kops/
+  239  ./create_cluster.sh 
+  240  ./create_cluster.sh lab10.courseandlabs.com cloud9_role
+  241  kubectl apply -f metricserver.yaml 
+  242  ./install_helm.sh
+  243  cat install_helm.sh 
+  244    kubectl create namespace prometheus
+  245  helm install stable/prometheus         --name prometheus         --namespace prometheus         --set alertmanager.persistentVolume.storageClass="gp2"         --set server.persistentVolume.storageClass="gp2"
+  246            kubectl get all -n prometheus
+  247      kubectl create namespace grafana
+  248  helm install stable/grafana         --name grafana         --namespace grafana         --set persistence.storageClassName="gp2"         --set datasources."datasources\.yaml".apiVersion=1         --set datasources."datasources\.yaml".datasources[0].name=Prometheus         --set datasources."datasources\.yaml".datasources[0].type=prometheus         --set datasources."datasources\.yaml".datasources[0].url=http://prometheus-server.prometheus.svc.cluster.local         --set datasources."datasources\.yaml".datasources[0].access=proxy         --set datasources."datasources\.yaml".datasources[0].isDefault=true         --set service.type=LoadBalancer
+  249      
+  250  kubectl get all -n grafana|grep Running|wc -l
+  251  kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+  252  kubectl get all -n grafana -o wide
+  253  cd ..
+  254  cd myapp1808/
+  255  kubectl apply -f namespace/
+  256  kubectl get banesoaces
+  257  kubectl get namespaces
+  258  kubectl describe namespace mycart
+  259  clear
+  260  kubectl get pods -n kube-system
+  261  kubectl config set-context $(kubectl config current-context) --namespace=<insert-namespace-name-here>
+  262  kubectl config set-context $(kubectl config current-context) --namespace=mycart
+  263  $ kubectl config view | grep namespace:
+  264  kubectl config view | grep namespace:
+  265  cd ..
+  266  cd cart-ms/
+  267  kubectl apply -f deploy/frontend/
+  268  kubectl get hpa
+  269  kubectl get pod -w
+  270  kubectl apply -f deploy/frontend/
+  271  kubectl get sccv -o wide
+  272  kubectl get svc -o wide
+  273  kubectl rollout history deployment.v1beta1.apps/
+  274  kubectl rollout history deployment.v1beta1.apps/myacart-frontend
+  275  while true; do wget -q -O- ; done
+  276  kubectl get service
+  277  while true; do wget -q -O- ; done
+  278  kubectl rollout undo deployment.v1beta1.apps/myacart-frontend
+  279  while true; do wget -q -O- http://abd33cb7548b011ea885f06d01022c9f-1640341904.us-west-2.elb.amazonaws.com/ ; done
+  280  kubectl get endpoints -w
+  281  kubectl get pod -w
+  282  kubectl get deploy -w
+  283  kubectl get hpa -w
+  284  kubectl get rs -w
+  285  clear
+  286  pwd
+  287  clear
+  288  exit
+  289  cd kube_install_kops/
+  290  ./delete_cluster.sh 
+  291  history
+  292  clear
+  293  ./create_cluster.sh lab10.courseandlabs.com cloud9_role
+  294  cd ..
+  295  cd myapp1808/
+  296  cd ..
+  297  cd cart-ms/
+  298  cd deploy/
+  299  cd ..
+  300  cd kube_install_kops/
+  301  kubectl create namespace mycart
+  302  kubectl get storageclass
+  303  kubectl describe storageclass default
+  304  cd ..
+  305  clear
+  306  ls
+  307  clear
+  308  kubectl apply -f cart-ms/deploy/database/mysql-configfile.yaml 
+  309  kubectl apply -f cart-ms/deploy/database/mysql-cluster-statefulset.yaml 
+  310  kubectl logs mysql-0 -c init0mysql -n mycart
+  311  kubectl logs mysql-0 -c init-mysql -n mycart
+  312  kubectl logs mysql-1 -c init-mysql -n mycart
+  313  kubectl log mysql-1 -c init-mysql -n mycart
+  314  kubectl delete namespace mycart
+  315  kubectl create namespace mycart
+  316  kubectl get pods -n mycart -w
+  317  kubectl apply -f cart-ms/deploy/database/
+  318  kubectly apply -f cart-ms/deploy/intializedb/createdbjob.yaml 
+  319  kubectl apply -f cart-ms/deploy/intializedb/createdbjob.yaml 
+  320  kubectl apply -f cart-ms/deploy/frontend/
+  321  kubectl get service
+  322  kubectl get service -n mycart -o wide
+  323  kubectl apply -f cart-ms/deploy/frontend/
+  324  kubectl exec -it mysql-0 /bin/bash -n mycart 
+  325  history
+  326  kubectl get pods -n mycart -w
+  327  history
+  328  hostname
+  329  hostnamectl
+  330  hostname. hostnamectl. cat
+  331  cat /proc/sys/kernel/hostname
+  332  arch ; uname -a
+  333  cd kube_install_kops/
+  334  ./create_cluster.sh lab10.courseandlabs.com cloud9_role
+  335  kubectl get service
+  336  kubectl get service -o wide -n mycart
+  337  ./delete_cluster.sh 
+  338  ./create_cluster.sh lab10.courseandlabs.com cloud9_role
+  339  kubectl get service -o wide -n mycart
+  340  cd ../
+  341  cd cart-ms/
+  342  cd deploy/
+  343  cd ../../kube_install_kops/
+  344  ./install_helm.sh 
+  345  cd ../cart-ms/
+  346  cd deploy/
+  347  helm ls
+  348  helm create cart-deploy
+  349  helm inspect
+  350  helm inspect cart-deploy/
+  351  helm template cart-deploy/
+  352  helm package cart-deploy/
+  353  helm install /home/ec2-user/environment/cart-ms/deploy/
+  354  helm ls
+  355  helm install cart-deploy
+  356  ls
+  357  cd cart-deploy
+  358  helm install cart-deploy
+  359  cd ..
+  360  helm install cart-deploy
+  361  kubectl create namespace mycart
+  362  helm install cart-deploy
+  363  helm ls
+  364  helm upgrade lanky-poodle cart-deploy
+  365  helm ls
+  366  helm history
+  367  helm history lanky-poodle
+  368  helm plugin install https://github.com/hypnoglow/helm-s3.git
+  369  aws vs3 mb s3://student10-helm-repo
+  370  aws s3 mb s3://student10-helm-repo
+  371  helm repo add my-charts s3://<bucketname>/charts
+  372  helm repo add my-charts s3://student10-helm-repo/charts
+  373  helm S3 init s3://student10-helm-repo/charts
+  374  helm s3 init s3://student10-helm-repo/charts
+  375  export AWS_REGION=us-east-1
+  376  helm s3 init s3://student10-helm-repo/charts
+  377  helm repo add my-charts s3://student10-helm-repo/charts
+  378  helm s3 push ./cart-deploy-0.1.0.tgz my-charts
+  379  helm ls
+  380  helm repo list
+  381  helm search my-charts
+  382  wget https://eksworkshop.com/intermediate/230_logging/deploy.files/fluentd.yml
+  383  kubectl apply fluentd.yml
+  384  kubectl apply -f fluentd.yml
+  385  kubectl get pods -n kube-system | grep fluentd
+  386  kubectl logs pods -n kube-system
+  387  kubectl logs -n kube-system
+  388  kubectl get pods
+  389  kubectl get ds -n kube-system
+  390  kubectl delete ds fluentd-cloudwatch -n kube-system
+  391  kubectl apply -f fluentd.yml
+  392  history
+  393  sudo yum -y install java-1.8.0-openjdk.x86_64
+  394  sudo yum -y remove java-1.7.0-openjdk
+  395  which jre
+  396  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+  397  sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+  398  sudo yum install -y  jenkins
+  399  sudo service jenkins start
+  400  sudo chkconfig jenkins on
+  401  sudo service jenkins status
+  402  cd /var/lib/jenkins/secrets/initialAdminPassword
+  403  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  404  docker rmi `docker images|awk '{print $3}'`
+  405  cd ..
+  406  git clone https://github.com/88pawankumarjha/cart-ms.git
+  407  cd cart-ms
+  408  git add * 
+  409  git commit -m "my cart first release"
+  410  git oush
+  411  git push
+  412  git add * 
+  413  git commit -m "my cart first release"
+  414  git push
+  415  git add * 
+  416  git status
+  417  git add * 
+  418  git commit -m "my cart first release"
+  419  git add * 
+  420  git add awslogs/*
+  421  git add .
+  422  git status
+  423  git add awslogs
+  424  git status
+  425  sudo service jenkins restart
+  426  cd ..
+  427  sudo usermod -a -G docker jenkins
+  428  sudo cp -R ~/.kube /var/lib/jenkins/
+  429  sudo chown jenkins:jenkins /var/lib/jenkins/.kube/
+  430  which kubectl
+  431  ls
+  432  cd cart-ms
+  433  ls
+  434  cd awslogs/
+  435  ls
+  436  ls -lrth
+  437  sudo service jenkins restart
+  438  sudo chown -R jenkins:jenkins /var/lib/jenkins/.kube/
+  439  kubectl get service -o wide -n mycart
+  440  cd ../..
+  441  cd kube_install_kops/
+  442  mkdir openshift
+  443  wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-install-linux-4.3.0.tar.gz
+  444  cd openshift
+  445  wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-install-linux-4.3.0.tar.gz
+  446  tar -zxvf openshift-install-linux-4.3.0.tar.gz 
+  447  clear
+  448  ./openshift-install create cluster
+  449  cd ..
+  450  cd cart-ms
+  451  cd awslogs/
+  452  rm -rf .git
+  453  cd ..
+  454  git add *
+  455  git commit -m "git issue"
+  456  git push
+  457  ls
+  458  rm -rf awslogs
+  459  ls
+  460  git add *
+  461  git status
+  462  git commit -m "git issue"
+  463  git add .
+  464  git status
+  465  git commit -m "git issue"
+  466  git push
+  467  history
+AP-LAB-ROLE59:~/environment/cart-ms (master) $  
