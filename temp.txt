@@ -1,0 +1,4 @@
+# https://www.thepythoncode.com/article/stock-price-prediction-in-python-using-tensorflow-2-and-keras
+# n_steps 5, 10 --> 1: Accuracy Score: 0.6956521739130435, Future price after 1 days is 664.44 Rs
+# n_steps 50, 100, n_layers=2,3, EPOCHS = 400 --> 1: Accuracy Score: 0.7142857142857143, Future price after 1 days is 663.50 Rs
+# n_steps 50, 100, n_layers=6,9, EPOCHS = 4000 --> Mean Absolute Error: 378.1898550419456, 1: Accuracy Score: 0.7857142857142857, Future price after 1 days is 660.80 Rs
